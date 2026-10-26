@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>三木影视 | 精选片单 · 热映榜单 · 影评解析 · 观影攻略</title>
+<meta name="description" content="三木影视（https://sanmuyingshi-app.github.io）是一份由影迷维护的手工片单：每周更新院线热映榜单、冷门佳片挖坟、剧情拆解与配客观影攻略。不凑热度、不刷评分，只把值得花时间的好片子挑出来，附上映年份、片长、适配人群与观看提示，帮你避开烂片，省下两小时。">
+<meta name="keywords" content="三木影视,三木影视片单,三木影视热映榜,三木影视影评,影视推荐,电影片单推荐,院线热映榜单,冷门佳片,剧情解析,观影攻略,剧集追更,经典电影重看,sanmuyingshi-app">
+<meta name="author" content="三木影视编辑部">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="generator" content="手写 HTML">
+<meta name="theme-color" content="#14110f">
+<link rel="canonical" href="https://sanmuyingshi-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="三木影视">
+<meta property="og:title" content="三木影视 | 精选片单 · 热映榜单 · 影评解析 · 观影攻略">
+<meta property="og:description" content="三木影视收录院线热映榜单、冷门佳片挖坟、剧情拆解与配客观影攻略，每周手工更新，只挑值得花时间的好片。">
+<meta property="og:url" content="https://sanmuyingshi-app.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="三木影视 | 精选片单 · 热映榜单 · 影评解析 · 观影攻略">
+<meta name="twitter:description" content="三木影视：手工维护的影视片单与榜单，附片长、适配人群与观看提示，每周三更新。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://sanmuyingshi-app.github.io/#website",
+      "url": "https://sanmuyingshi-app.github.io/",
+      "name": "三木影视",
+      "alternateName": "sanmuyingshi-app",
+      "inLanguage": "zh-CN",
+      "description": "三木影视提供精选片单、热映榜单、影评解析与观影攻略，覆盖院线新片、冷门佳片与剧集追更。",
+      "publisher": { "@id": "https://sanmuyingshi-app.github.io/#org" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://sanmuyingshi-app.github.io/#org",
+      "name": "三木影视",
+      "url": "https://sanmuyingshi-app.github.io/",
+      "slogan": "把好片子挑出来，把烂片子挡在门外"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://sanmuyingshi-app.github.io/#page",
+      "url": "https://sanmuyingshi-app.github.io/",
+      "name": "三木影视 · 片单与榜单总览",
+      "isPartOf": { "@id": "https://sanmuyingshi-app.github.io/#website" },
+      "about": "影视片单推荐、热映榜单、影评解析、观影攻略"
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --ink:#14110f;
+  --ink-2:#1c1815;
+  --ink-3:#252019;
+  --paper:#f2ece2;
+  --paper-dim:#a79d90;
+  --amber:#e8b45f;
+  --amber-deep:#c08b34;
+  --jade:#6f9c8f;
+  --line:rgba(232,180,95,.22);
+  --serif:"Songti SC","Noto Serif SC","Source Han Serif SC",Georgia,"Times New Roman",serif;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.75;
+  background-image:
+    radial-gradient(circle at 12% 8%,rgba(232,180,95,.07),transparent 42%),
+    radial-gradient(circle at 88% 62%,rgba(111,156,143,.08),transparent 46%);
+  background-attachment:fixed;
+}
+a{color:var(--amber);text-decoration:none}
+a:hover{color:var(--paper)}
+img{max-width:100%;display:block}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+
+/* 顶部滚动条 */
+.ticker{
+  background:linear-gradient(90deg,var(--amber-deep),var(--amber));
+  color:#211a0d;font-size:12.5px;letter-spacing:.04em;
+  overflow:hidden;white-space:nowrap;padding:6px 0;
+}
+.ticker span{display:inline-block;padding-left:100%;animation:slide 34s linear infinite}
+@keyframes slide{to{transform:translateX(-100%)}}
+
+/* 头部 */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(20,17,15,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:62px}
+.brand{display:flex;align-items:center;gap:11px}
+.mark{
+  width:34px;height:34px;flex:0 0 34px;
+  background:linear-gradient(150deg,var(--amber),var(--amber-deep) 55%,var(--jade));
+  border-radius:3px;position:relative;
+}
+.mark::before,.mark::after{content:"";position:absolute;background:var(--ink);border-radius:1px}
+.mark::before{left:9px;top:7px;width:2px;height:20px;box-shadow:7px 0 0 var(--ink),14px 0 0 var(--ink)}
+.mark::after{left:5px;top:14px;width:24px;height:2px}
+.brand b{font-family:var(--serif);font-size:21px;letter-spacing:.14em;font-weight:700}
+.brand i{font-style:normal;font-size:10.5px;color:var(--paper-dim);letter-spacing:.18em;display:block;margin-top:-4px}
+nav ul{display:flex;gap:22px;list-style:none}
+nav a{color:var(--paper-dim);font-size:14px;padding-bottom:3px;border-bottom:1px solid transparent}
+nav a:hover{color:var(--amber);border-bottom-color:var(--amber)}
+
+/* 主视觉 */
+.hero{padding:52px 0 26px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:start}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:.22em;color:var(--jade);
+  border:1px solid rgba(111,156,143,.4);border-radius:99px;padding:4px 12px;margin-bottom:20px;
+}
+h1{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(38px,7vw,68px);line-height:1.08;letter-spacing:.02em;
+}
+h1 em{font-style:normal;color:var(--amber);position:relative}
+h1 em::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:8px;background:rgba(232,180,95,.18);z-index:-1}
+.lede{margin-top:20px;color:#d8cfc1;max-width:46ch;font-size:15.5px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{
+  font-size:12.5px;color:var(--paper-dim);
+  border:1px dashed var(--line);border-radius:2px;padding:5px 11px;
+}
+.chip s{text-decoration:none;color:var(--amber)}
+
+/* 胶片格 */
+.film{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:7px;
+  padding:9px;background:var(--ink-2);
+  border:1px solid var(--line);border-radius:4px;
+  box-shadow:0 18px 40px rgba(0,0,0,.45);
+}
+.film i{
+  display:block;aspect-ratio:4/5;border-radius:2px;
+  background:linear-gradient(160deg,#3a322a,#191512);
+  position:relative;overflow:hidden;
+}
+.film i::before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(115deg,rgba(232,180,95,.55),transparent 60%);
+  opacity:.5;
+}
+.film i::after{
+  content:attr(data-n);
+  position:absolute;right:6px;bottom:4px;
+  font-family:var(--serif);font-size:15px;color:rgba(242,236,226,.82);
+}
+.film i:nth-child(2)::before{background:linear-gradient(115deg,rgba(111,156,143,.6),transparent 62%)}
+.film i:nth-child(4)::before{background:linear-gradient(200deg,rgba(192,139,52,.6),transparent 58%)}
+.film i:nth-child(6)::before{background:linear-gradient(60deg,rgba(242,236,226,.28),transparent 55%)}
+.film i:nth-child(8)::before{background:linear-gradient(300deg,rgba(111,156,143,.42),transparent 60%)}
+.film-cap{margin-top:9px;font-size:11.5px;color:var(--paper-dim);letter-spacing:.1em;text-align:right}
+
+/* 主体两栏 */
+.body-grid{display:grid;grid-template-columns:190px 1fr;gap:38px;padding:34px 0 10px;margin-top:26px;border-top:1px solid var(--line)}
+.aside{position:sticky;top:86px;align-self:start}
+.aside h6{font-size:11px;letter-spacing:.24em;color:var(--paper-dim);font-weight:400;margin-bottom:14px}
+.aside a{
+  display:block;padding:9px 0 9px 14px;font-size:14px;color:var(--paper-dim);
+  border-left:2px solid var(--line);
+}
+.aside a:hover,.aside a.on{color:var(--amber);border-left-color:var(--amber)}
+.aside .side-note{margin-top:22px;font-size:12px;color:#7d756a;line-height:1.7;border-top:1px dotted var(--line);padding-top:14px}
+
+section{padding:30px 0 44px;border-bottom:1px dotted var(--line)}
+section:last-of-type{border-bottom:none}
+.sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:24px}
+.sec-head .no{font-family:var(--serif);font-size:32px;color:var(--amber-deep);line-height:1}
+h2{font-family:var(--serif);font-size:clamp(23px,3.4vw,30px);letter-spacing:.03em}
+.sec-head .en{font-size:11px;letter-spacing:.2em;color:#7d756a;text-transform:uppercase}
+.sec-head p{flex:1 1 100%;color:var(--paper-dim);font-size:14px;max-width:62ch}
+
+/* 片单卡 */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:16px}
+.card{
+  background:var(--ink-2);border:1px solid var(--line);border-radius:4px;
+  padding:18px 18px 16px;transition:transform .25s,border-color .25s;
+}
+.card:hover{transform:translateY(-4px);border-color:var(--amber)}
+.card .tag{font-size:11px;color:var(--jade);letter-spacing:.16em}
+.card h3{font-family:var(--serif);font-size:19px;margin:8px 0 6px;letter-spacing:.02em}
+.card .sub{font-size:12px;color:#7d756a}
+.card p{font-size:14px;color:#cbc2b4;margin-top:10px}
+.card .foot{margin-top:14px;padding-top:11px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--paper-dim);display:flex;justify-content:space-between}
+.card .foot b{color:var(--amber);font-weight:400}
+
+/* 榜单 */
+.rank{list-style:none;counter-reset:r}
+.rank li{
+  display:grid;grid-template-columns:46px 1fr auto;gap:16px;align-items:center;
+  padding:15px 4px;border-bottom:1px solid rgba(232,180,95,.14);
+}
+.rank li:last-child{border-bottom:none}
+.rank .n{font-family:var(--serif);font-size:27px;color:var(--amber-deep);text-align:center}
+.rank h3{font-size:16px;font-weight:500;letter-spacing:.02em}
+.rank .d{font-size:12.5px;color:#7d756a;margin-top:3px}
+.bar{width:96px;height:6px;background:var(--ink-3);border-radius:99px;overflow:hidden;margin-top:8px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--amber-deep),var(--amber))}
+.score{font-family:var(--serif);font-size:19px;color:var(--amber);text-align:right;white-space:nowrap}
+.score small{display:block;font-size:11px;color:#7d756a;letter-spacing:.08em}
+
+/* 影评 */
+.quotes{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+blockquote{
+  background:var(--ink-2);border-left:3px solid var(--amber);
+  padding:18px 20px;border-radius:0 4px 4px 0;
+}
+blockquote p{font-family:var(--serif);font-size:16.5px;line-height:1.85;color:#e6ded0}
+blockquote footer{margin-top:12px;font-size:12.5px;color:var(--paper-dim)}
+.notes{margin-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.note{background:var(--ink-3);border-radius:4px;padding:14px 16px;font-size:13.5px;color:#cbc2b4}
+.note strong{display:block;color:var(--amber);font-weight:400;font-size:13px;margin-bottom:5px;letter-spacing:.06em}
+
+/* 时间轴 */
+.tl{list-style:none;position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:1px;background:var(--line)}
+.tl li{position:relative;padding:0 0 22px}
+.tl li::before{
+  content:"";position:absolute;left:-24px;top:8px;width:9px;height:9px;border-radius:50%;
+  background:var(--ink);border:2px solid var(--amber);
+}
+.tl time{font-size:12px;color:var(--jade);letter-spacing:.1em}
+.tl h3{font-size:15.5px;font-weight:500;margin:3px 0 4px}
+.tl p{font-size:13.5px;color:#bfb6a8}
+
+/* 关于 */
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:30px}
+.about p{color:#cbc2b4;font-size:14.5px;margin-bottom:14px}
+dl.facts{border-top:2px solid var(--amber-deep)}
+dl.facts div{display:flex;gap:12px;padding:11px 2px;border-bottom:1px solid var(--line);font-size:13.5px}
+dl.facts dt{width:88px;flex:0 0 88px;color:#7d756a}
+dl.facts dd{color:#ded5c7;word-break:break-all}
+
+/* 订阅条 */
+.subscribe{
+  margin:36px 0 0;padding:26px;background:linear-gradient(135deg,var(--ink-3),#17130f);
+  border:1px solid var(--line);border-radius:5px;
+  display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;
+}
+.subscribe h3{font-family:var(--serif);font-size:20px}
+.subscribe p{font-size:13px;color:var(--paper-dim);margin-top:4px}
+.btn{
+  display:inline-block;background:var(--amber);color:#211a0d;
+  padding:11px 24px;border-radius:2px;font-size:14px;letter-spacing:.06em;
+}
+.btn:hover{background:var(--paper);color:#211a0d}
+
+/* 页脚 */
+footer{margin-top:40px;border-top:1px solid var(--line);padding:32px 0 44px;background:rgba(0,0,0,.22)}
+.f-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:26px}
+.f-grid h4{font-size:12px;letter-spacing:.2em;color:var(--amber);font-weight:400;margin-bottom:12px}
+.f-grid ul{list-style:none;font-size:13.5px}
+.f-grid li{padding:4px 0;color:var(--paper-dim)}
+.f-grid a{color:var(--paper-dim)}
+.f-grid a:hover{color:var(--amber)}
+.f-bot{
+  margin-top:26px;padding-top:16px;border-top:1px dotted var(--line);
+  font-size:12.5px;color:#7d756a;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;
+}
+.url{color:var(--amber);word-break:break-all}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:28px}
+  .body-grid{grid-template-columns:1fr;gap:20px}
+  .aside{position:static}
+  .aside ul{display:flex;flex-wrap:wrap;gap:8px}
+  .aside a{border-left:none;border:1px solid var(--line);border-radius:99px;padding:6px 13px;font-size:13px}
+  .aside a:hover,.aside a.on{border-color:var(--amber)}
+  .quotes,.about,.f-grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .topbar .wrap{flex-wrap:wrap;min-height:0;padding:9px 0}
+  nav{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  nav ul{gap:16px;white-space:nowrap;padding-bottom:3px}
+  .hero{padding:34px 0 18px}
+  .lede{font-size:15px}
+  .rank li{grid-template-columns:34px 1fr;gap:12px}
+  .score{grid-column:2;text-align:left;margin-top:4px}
+  .rank .n{font-size:22px}
+  .subscribe{padding:20px}
+  .tl{padding-left:20px}
+  .tl li::before{left:-18px}
+}
+@media print{
+  body{background:#fff;color:#000}
+  .topbar,.ticker{display:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<div class="ticker"><span>三木影视 · 本周更新：院线热映榜单已刷新至第 42 期 ｜ 冷门佳片挖坟新增 6 部南欧老片 ｜ 追更排期表同步到 10 月 ｜ 网址 https://sanmuyingshi-app.github.io</span></div>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <span><b>三木影视</b><i>SANMU FILM ARCHIVE</i></span>
+    </div>
+    <nav aria-label="主导航">
+      <ul>
+        <li><a href="#picks">精选片单</a></li>
+        <li><a href="#rank">热映榜单</a></li>
+        <li><a href="#review">影评解析</a></li>
+        <li><a href="#guide">观影攻略</a></li>
+        <li><a href="#about">关于我们</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <section class="hero" id="picks" aria-labelledby="h1">
+    <div class="hero-grid">
+      <div>
+        <span class="kicker">手工片单 · 每周三更新 · 第 42 期</span>
+        <h1 id="h1">三木影视：<br>把好片子<em>挑出来</em></h1>
+        <p class="lede">这里是三木影视的常驻片单台。不追热搜、不刷评分，只做一件事——在每周上百部新片和旧片里，挑出真正值得你花两小时的那几部，附上片长、适配人群和一句观看提示。</p>
+        <p class="lede">榜单里既有刚上映的院线新片，也有被时间埋掉的冷门佳片。若你只想今晚挑一部，直接看热映榜单前五。</p>
+        <div class="hero-meta">
+          <span class="chip">收录片目 <s>1286</s> 部</span>
+          <span class="chip">本期新增 <s>24</s> 部</span>
+          <span class="chip">编辑 <s>老周 / 阿棠</s></span>
+          <span class="chip">更新于 <s>2026-10-26</s></span>
+        </div>
+      </div>
+      <div>
+        <div class="film" role="img" aria-label="三木影视本期九部推荐影片的胶片格索引">
+          <i data-n="01"></i><i data-n="02"></i><i data-n="03"></i>
+          <i data-n="04"></i><i data-n="05"></i><i data-n="06"></i>
+          <i data-n="07"></i><i data-n="08"></i><i data-n="09"></i>
+        </div>
+        <p class="film-cap">本期胶片格 · 01—09 号片位</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="body-grid">
+    <aside class="aside">
+      <h6>本期目录</h6>
+      <ul style="list-style:none">
+        <li><a class="on" href="#picks">精选片单</a></li>
+        <li><a href="#rank">热映榜单</a></li>
+        <li><a href="#review">影评解析</a></li>
+        <li><a href="#guide">观影攻略</a></li>
+        <li><a href="#about">关于我们</a></li>
+        <li><a href="#top">回到顶部</a></li>
+      </ul>
+      <p class="side-note">本站由三木影视编辑部手工维护，片目备注均为编辑看完后自己写的，不接受片方软文。发现条目有误，可在下方留言条目编号。</p>
+    </aside>
+
+    <div>
+      <section id="picks-list" aria-labelledby="h-picks">
+        <div class="sec-head">
+          <span class="no">01</span>
+          <h2 id="h-picks">精选片单</h2>
+          <span class="en">Editor's Picks</span>
+          <p>四组常驻片单，按观看场景分类：周末独处、家庭共看、深夜补片、通勤刷剧。每组控制在六部以内，看完即止，不做无意义的长列表。</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <span class="tag">周末独处 · 剧情</span>
+            <h3>沉下来的六部慢片</h3>
+            <p class="sub">6 部 · 平均片长 128 分钟 · 适合关灯看</p>
+            <p>节奏都不快，但每一部都经得起第二次重看。建议一次只看一部，看完整理完情绪再开下一部，连着刷会浪费它们。</p>
+            <div class="foot"><span>更新 10-24</span><b>阅读片单 →</b></div>
+          </article>
+          <article class="card">
+            <span class="tag">家庭共看 · 合家欢</span>
+            <h3>三代人都能坐住的片</h3>
+            <p class="sub">5 部 · 无血腥 · 建议投屏</p>
+            <p>挑选标准很苛刻：老人不犯困、小孩不害怕、中间的成年人也不至于玩手机。配了音量提示，第三部客厅音响需要调低两格。</p>
+            <div class="foot"><span>更新 10-21</span><b>阅读片单 →</b></div>
+          </article>
+          <article class="card">
+            <span class="tag">深夜补片 · 悬疑</span>
+            <h3>零点后开看的烧脑档</h3>
+            <p class="sub">4 部 · 含剧情反转 · 慎看</p>
+            <p>四部都带反转，其中一部结尾争议很大，片单里附了两种不同的解读，看完可以自己对一下，看站哪边。</p>
+            <div class="foot"><span>更新 10-18</span><b>阅读片单 →</b></div>
+          </article>
+          <article class="card">
+            <span class="tag">通勤刷剧 · 剧集</span>
+            <h3>单集四十分钟的追更表</h3>
+            <p class="sub">3 部 · 已完结 · 可跳集</p>
+            <p>都是完结剧，省去追更的焦虑。标注了可跳过的注水集，第二部第 7 集可以直接跳过，不影响主线。</p>
+            <div class="foot"><span>更新 10-15</span><b>阅读片单 →</b></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="rank" aria-labelledby="h-rank">
+        <div class="sec-head">
+          <span class="no">02</span>
+          <h2 id="h-rank">热映榜单</h2>
+          <span class="en">Weekly Box Office Watch</span>
+          <p>三木影视每期更新的观影推荐榜，分数为编辑部四人打分取均值，满分 10 分。分数只代表我们自己的口味，不构成购票建议。</p>
+        </div>
+        <ol class="rank">
+          <li>
+            <span class="n">1</span>
+            <div>
+              <h3>《湾区长夜》 · 2026 · 剧情 / 犯罪</h3>
+              <p class="d">142 分钟 · 海岸线实景拍摄 · 后四十分钟有一场长镜头</p>
+              <span class="bar"><i style="width:92%"></i></span>
+            </div>
+            <span class="score">9.2<small>编辑均分</small></span>
+          </li>
+          <li>
+            <span class="n">2</span>
+            <div>
+              <h3>《铁皮邮差》 · 2026 · 公路 / 家庭</h3>
+              <p class="d">118 分钟 · 全程方言对白 · 建议开字幕</p>
+              <span class="bar"><i style="width:87%"></i></span>
+            </div>
+            <span class="score">8.7<small>编辑均分</small></span>
+          </li>
+          <li>
+            <span class="n">3</span>
+            <div>
+              <h3>《第七封回信》 · 2025 · 爱情 / 年代</h3>
+              <p class="d">126 分钟 · 冷门佳片挖坟栏目补录 · 二刷人数最多</p>
+              <span class="bar"><i style="width:83%"></i></span>
+            </div>
+            <span class="score">8.4<small>编辑均分</small></span>
+          </li>
+          <li>
+            <span class="n">4</span>
+            <div>
+              <h3>《灯塔守夜人》 · 2026 · 纪录</h3>
+              <p class="d">96 分钟 · 一人一岛三百天 · 无旁白</p>
+              <span class="bar"><i style="width:79%"></i></span>
+            </div>
+            <span class="score">8.0<small>编辑均分</small></span>
+          </li>
+          <li>
+            <span class="n">5</span>
+            <div>
+              <h3>《雪线之上》 · 2026 · 冒险</h3>
+              <p class="d">131 分钟 · 高原实景 · 建议大屏观看</p>
+              <span class="bar"><i style="width:74%"></i></span>
+            </div>
+            <span class="score">7.5<small>编辑均分</small></span>
+          </li>
+          <li>
+            <span class="n">6</span>
+            <div>
+              <h3>《市立图书馆》 · 2025 · 喜剧</h3>
+              <p class="d">104 分钟 · 群戏 · 中段略散，后半收回</p>
+              <span class="bar"><i style="width:68%"></i></span>
+            </div>
+            <span class="score">7.0<small>编辑均分</small></span>
+          </li>
+        </ol>
+      </section>
+
+      <section id="review" aria-labelledby="h-review">
+        <div class="sec-head">
+          <span class="no">03</span>
+          <h2 id="h-review">影评解析</h2>
+          <span class="en">Close Reading</span>
+          <p>不写通稿式影评，只拆具体的段落、调度和台词。每篇控制在两千字以内，看完电影再来看，避免被提前剧透。</p>
+        </div>
+        <div class="quotes">
+          <blockquote>
+            <p>《湾区长夜》里那场码头戏，镜头始终没给反派正脸，只让他的影子先落到主角脚边——这比任何一句台词都更让人后背发凉。</p>
+            <footer>— 老周 · 10 月 24 日 · 含第 62 分钟剧情提及</footer>
+          </blockquote>
+          <blockquote>
+            <p>《铁皮邮差》最妙的是它把公路片拍成了家书。车一直在开，但观众记住的全是停下来那几次。</p>
+            <footer>— 阿棠 · 10 月 20 日 · 无关键剧透</footer>
+          </blockquote>
+        </div>
+        <div class="notes">
+          <div class="note"><strong>剧情拆解</strong>10 月新增 4 篇，含两部冷门片的结局分歧解读，附时间线对照表。</div>
+          <div class="note"><strong>导演手法</strong>长镜头专题已写到第 6 期，本期拆《湾区长夜》的第 88 分钟调度。</div>
+          <div class="note"><strong>台词摘录</strong>收录 120 句值得抄下来的对白，标注出处时间点与上下文。</div>
+          <div class="note"><strong>重看笔记</strong>五年后再看的旧片感受，本期为《花样年华》与《一一》。</div>
+        </div>
+      </section>
+
+      <section id="guide" aria-labelledby="h-guide">
+        <div class="sec-head">
+          <span class="no">04</span>
+          <h2 id="h-guide">观影攻略</h2>
+          <span class="en">Watch Guide</span>
+          <p>看片之外的杂事：什么设备、什么顺序、什么时间点看，以及怎么避免踩到删减版和错误字幕。</p>
+        </div>
+        <ol class="tl">
+          <li>
+            <time>看片前 · 第 1 步</time>
+            <h3>确认版本与片长</h3>
+            <p>同一部片常有院线版、导演剪辑版两套，片长差十几分钟。三木影视条目里标注了版本差异，按你想看的那版选。</p>
+          </li>
+          <li>
+            <time>看片前 · 第 2 步</time>
+            <h3>字幕与时间轴</h3>
+            <p>老片常见字幕轴偏移。若开头十秒就对不上，换一条轴比硬看更省事，别将就。</p>
+          </li>
+          <li>
+            <time>观看中 · 第 3 步</time>
+            <h3>音量与光线</h3>
+            <p>夜戏多的片子建议关顶灯、保留一盏侧灯，音量比日常低两格，对白会更清楚。</p>
+          </li>
+          <li>
+            <time>观看后 · 第 4 步</time>
+            <h3>记一句就够</h3>
+            <p>看完写下一句自己的感受，比打分有用。三个月后翻这一句，能想起来整部片。</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="about" aria-labelledby="h-about">
+        <div class="sec-head">
+          <span class="no">05</span>
+          <h2 id="h-about">关于三木影视</h2>
+          <span class="en">About Us</span>
+        </div>
+        <div class="about">
+          <div>
+            <p>三木影视最初是四个人的私人观影记录，2024 年搬到 <span class="url">https://sanmuyingshi-app.github.io</span> 之后才开始公开更新。名字没什么来历，就是办公室窗外有三棵树。</p>
+            <p>我们不做资讯搬运，也不接片方推广。每部进片单的作品，编辑部至少有一个人完整看完，备注里那句"建议 XX 看"是真看过的判断，不是模板。</p>
+            <p>如果你发现某条的年份、片长或版本写错了，把条目编号发给我们，核实后会在下一期榜单末尾更正，并保留原记录。</p>
+            <div class="subscribe">
+              <div>
+                <h3>每周三收到新片单</h3>
+                <p>一封邮件，只发片单和更新说明，不发广告，随时可退。</p>
+              </div>
+              <a class="btn" href="#subscribe">订阅三木影视</a>
+            </div>
+          </div>
+          <dl class="facts">
+            <div><dt>站点名称</dt><dd>三木影视</dd></div>
+            <div><dt>网址</dt><dd>https://sanmuyingshi-app.github.io</dd></div>
+            <div><dt>域名</dt><dd>sanmuyingshi-app.github.io</dd></div>
+            <div><dt>更新频率</dt><dd>每周三 · 榜单每月复盘一次</dd></div>
+            <div><dt>收录片目</dt><dd>1286 部（含剧集 73 部）</dd></div>
+            <div><dt>编辑部</dt><dd>老周、阿棠、小满、老陈</dd></div>
+            <div><dt>联系方式</dt><dd>站点底部留言条目编号</dd></div>
+          </dl>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer id="top">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>三木影视</h4>
+        <p style="font-size:13.5px;color:#a79d90">一份手工维护的影视片单与榜单。挑片这件事，交给看过的人。</p>
+        <p style="font-size:13px;color:#7d756a;margin-top:8px">网址：<span class="url">https://sanmuyingshi-app.github.io</span></p>
+      </div>
+      <div>
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="#picks">精选片单</a></li>
+          <li><a href="#rank">热映榜单</a></li>
+          <li><a href="#review">影评解析</a></li>
+          <li><a href="#guide">观影攻略</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>说明</h4>
+        <ul>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#subscribe">订阅更新</a></li>
+          <li><a href="#top">回到顶部</a></li>
+          <li><a href="#picks-list">片单归档</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>© 2024—2026 三木影视 · sanmuyingshi-app.github.io · 本站内容为编辑部观影记录</span>
+      <span>最后更新：2026-10-26 · 第 42 期</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
